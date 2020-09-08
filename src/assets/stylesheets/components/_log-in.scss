@@ -1,0 +1,54 @@
+.log-in {
+  padding: 24px;
+  #logo {
+    width: 200px;
+  }
+  .panel {
+    background-color: white;
+    border-radius: 0;
+    width: 400px;
+    margin: auto;
+    .panel-body {
+      text-align: center;
+      &:first-child {
+        background-color: rgba(57, 60, 67, 0.8);
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+    .log-in-form {
+      margin: 20px;
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: solid 2px #ced1d6;
+        font-size: 18px;
+        outline: none;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        
+        &.log-in-button {
+          margin-bottom: 0px; 
+        }
+      }
+      
+      button {
+        background-color: rgba(57,60,67,.8);
+        color: white;
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+      }
+      ::-webkit-input-placeholder {
+        color: #ced1d6;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .panel {
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+button, .btn {
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  @include btn(white, #00bd9d);
+}
+.btn.btn-success {
+  @include btn(white, #48bf83);
+}
+.btn.btn-danger {
+  @include btn(white, #fc7166);
+}
+.btn.btn-info {
+  @include btn(white, #3697d7);
+}
+.btn.btn-default {
+  @include btn(white, #9b9b9b);
+}
+
+.btn.btn-secondary {
+  background-color: #3697d7 !important;
+  border-color: #3697d7 !important;
+}
+.btn.btn-outline-secondary {
+  color: #3697d7!important;
+}
+
+.btn.btn-outline-secondary:hover {
+  color: white !important;
+  background-color: #3697d7 !important;
+  border-color: #3697d7 !important;
+  svg {
+    path {
+      fill: white !important;
+    }
+  }
+}

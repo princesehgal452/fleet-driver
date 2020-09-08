@@ -1,0 +1,3 @@
+interface IDriverPermissions {
+  allowSearch?: boolean;
+}

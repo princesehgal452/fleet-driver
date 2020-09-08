@@ -1,0 +1,41 @@
+/*
+.block-ui-message-container {
+  position: fixed !important;
+}
+*/
+.hidden {
+  display: none;
+}
+
+.loading-indicator {
+  padding: 40px;
+  text-align: left;
+}
+.driver-setup__cards .loading-indicator {
+  padding: 0;
+  text-align: center;
+}
+
+.spacer-top-20 {
+  margin-top: 20px;
+}
+
+.spacer-top-40 {
+  margin-top: 40px;
+}
+
+.spacer-top-60 {
+  margin-top: 60px;
+}
+
+.spacer-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.spacer-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}

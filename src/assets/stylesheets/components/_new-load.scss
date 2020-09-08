@@ -1,0 +1,425 @@
+.new-load {
+  .card-close {
+    cursor: pointer;
+  }
+
+  .card-header {
+    color: #001B2B;
+    font-weight: 600;
+  }
+
+  .progress-bar {
+    background-color: #EEE;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 60px;
+    height: 40px;
+    padding-top: 5px;
+  }
+
+  .progress {
+    @include display-flex;
+    @include flex-row;
+    @include flex-end;
+    font-size: 20px;
+    color: rgb(119, 132, 140);
+    height: 20px;
+    .progress-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      background-color: #eeeeee;
+      border: solid 1px #3697d7;
+      margin: 2px 2px 2px 10px;
+    }
+    .progress-done {
+      background-color: #3697d7 !important;
+    }
+  }
+
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    @include media(minMob) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .hero-header {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      .header-title{
+        font-weight: 600;
+        color: #393d43;
+        margin: 0px;
+        font-size: 20px;
+        @include media(minDesktopSm) {
+          font-size: 34px !important;
+        }
+        @include media(minTab) {
+          font-size: 28px;
+        }
+      }
+      .back {
+        font-size: 20px;
+        text-align: right;
+        font-weight: 300;
+        color: #3697d7;
+        @include media(maxTab) {
+          font-size: 16px;
+        }
+        img {
+          width: 16px;
+          margin-left: 10px;
+          @include media(minTab) {
+            width: 24px;
+          }
+        }
+        span {
+          display: none;
+          @include media(minTab) {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .box{
+      box-shadow: none;
+      border-radius: 0px;
+      .box-header {
+        border-bottom:1px solid rgba(223, 223, 223, 0.5);
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        @include media(minTab) {
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+        .load-title {
+          opacity: 0.8;
+          font-size: 30px;
+          font-weight: 600;
+          color: #001b2b;
+          margin-bottom: 20px;
+        }
+      }
+      .box-content {
+        padding-top: 40px;
+        .load-details & {
+          padding-top: 100px !important;
+          background-color: red;
+        }
+        padding: 20px 15px;
+        .form-title {
+          opacity: 0.5;
+          font-size: 22px;
+          font-weight: 400;
+          color: #001b2b;
+          padding-bottom: 20px;
+        }
+        .equipment-type-title {
+          padding-bottom: 0px;
+        }
+        .padding-lg {
+
+          @include media(minDesktopMd) {
+            padding-right: 150px;
+          }
+        }
+        .padding-md {
+
+          @include media(minDesktopMd) {
+            padding-right: 100px;
+          }
+        }
+        .consignee {
+          @include media(minDesktopSm) {
+            margin-bottom: 60px;
+          }
+        }
+      }
+
+      .box-footer {
+        border-top: 2px solid rgba(223, 223, 223, 0.5);
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 30px 30px 15px 30px;
+        .btn {
+          margin-right: 20px;
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+
+  div[class*="equipment-type-error-"] {
+    // display will be changed in code.
+    display: none;
+    color: red;
+    opacity: .65;
+  }
+
+  .img-text-color {
+    color: #ced1d6;
+  }
+
+  .form-group.form-group-icon-right  {
+    margin-bottom: 40px;
+  }
+
+  .ltlonly-button {
+    margin-bottom: 10px;
+  }
+
+  .form-group, .geosuggest__input-wrapper, .react-datepicker__input-container {
+    label:not(.hazardous-materials):not(.checkbox-label):not(.prepaid):not(.collect):not(.customer-check):not(.equipment):not(.email-updates):not(.generate-bill-of-lading):not(.generate-load-tender):not(.send-to-driver) {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      opacity: 0;
+      font-size: 14px;
+      line-height: 16px;
+      color: $linkText;
+      transition: 150ms;
+      &:after {
+        content: '';
+      }
+    }
+
+    label.show {
+      transition: 400ms;
+      opacity: 1 !important;
+    }
+
+    input[type="text"] {
+      &:focus + label, &:active + label {
+        transition: 400ms;
+        opacity: 1;
+        top: -15px;
+      }
+    }
+
+    input[type="text"]:not([value=""]) + label {
+      transition: 400ms;
+      opacity: 1;
+      top: -15px;
+    }
+
+  }
+}
+
+
+.box-content {
+  padding-top: 40px;
+
+  .load-details & {
+    padding-top: 20px !important;
+    @include media(minTab) {
+      padding-top: 40px !important;
+    }
+  }
+
+  .hazardous-materials {
+    padding-left: 15px;
+  }
+
+  .special-care,
+  .hazardous-materials,
+  .bill-someone,
+  .prepaid,
+  .collect,
+  .customer-check,
+  .equipment,
+  .email-updates,
+  .generate-bill-of-lading,
+  .generate-load-tender,
+  .send-to-driver {
+    font-size: 20px;
+    color: $linkText;
+    font-weight: 300;
+  }
+
+  .driver-count {
+    font-size: 22px;
+  }
+
+  .driver-count:after {
+    content: "?";
+    background-color: #979797;
+    color: #fff;
+    width: 25px;
+    border-radius: 25px;
+    height: 25px;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+  }
+
+  #heatMap {
+    height: 500px;
+  }
+}
+
+.load-details {
+  display: none;
+  .button-large {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .btn {
+      padding: 15px 20px;
+      font-size: 16px;
+      img{
+        width: 14px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.load-pay {
+  display: none;
+  .box-content {
+    padding-top: 10px !important;
+  }
+  .load_range_dash {
+    text-align: center;
+    flex-basis: 80%;
+  }
+
+  .load-pay-field-container {
+    @include display-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .load-pay-field {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .form-title {
+      margin: 20px 0px;
+    }
+
+    .load-pay-negotiate-btn-container {
+      width: 49%;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+
+    .load-pay-negotiate-too-low {
+      @include btn(white, #F8C51C);
+    }
+  }
+}
+
+.form-control {
+  &.load-pay {
+    font-size: 1.1em;
+  }
+}
+
+.load-pay:disabled {
+  border: solid 1px #e9ecef;
+  background-color: #fff;
+}
+
+.load-misc {
+  display: none;
+}
+
+.new-load-container {
+  // max-width: 1024px;
+  margin: 0 auto;
+}
+
+.geosuggest {
+  padding: 0 !important;
+  border: 0;
+}
+
+.geosuggest__input-wrapper {
+  width: 100%;
+  height: 100%;
+  .geosuggest__input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 50px 15px 0.75rem !important;
+    border-bottom: 2px solid #ced1d6;
+    transition: 400ms;
+    &:focus, &:active {
+      transition: 400ms;
+      outline: none;
+    }
+  }
+}
+
+.geosuggest__suggests-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  border: 0;
+  width: 100%;
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      padding: 10px;
+      cursor: pointer;
+      transition: 150ms;
+      &:hover {
+        transition: 150ms;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .geosuggest__suggests {
+    border: 2px solid $borderFocusColor;
+    border-top: 0;
+    &.geosuggest__suggests--hidden {
+      border: 0;
+      display: none;
+    }
+  }
+}
+
+.load-details-card .load_dropoff_location {
+  border: 2px solid #CED1d6;
+  width: 500px;
+  height: 50px !important;
+}
+
+.load-details-card:not(:first-child) {
+  margin-top: 50px;
+}
+
+.react-datepicker-popper {
+  width: 245px;
+}
+
+
+.notice-container {
+  padding: 24px;
+}
+
+.react-datepicker__input-container,
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container {
+  input[type="text"] {
+    margin-bottom: 0 !important;
+  }
+}

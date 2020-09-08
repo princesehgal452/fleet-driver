@@ -1,0 +1,87 @@
+.active-loads-menu {
+  height: 68px;
+  box-shadow: 0 1px 4px 0 rgba(78, 86, 104, 0.25);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 60px;
+  padding: 15px;
+  z-index: 1000;
+  .dashboard-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a2c2e;
+  }
+  button {
+    background-color: white !important;
+    border: solid 1px #abb7c7 !important;
+    color: #395350 !important;
+    padding: 7px 10px;
+  }
+  .search-area {
+    position: relative;
+  }
+  .search-img {
+    width: 15px;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+  }
+  input {
+    width: 240px;
+    border-radius: 4px;
+    background-color: white;
+    border: solid 1px #abb7c7;
+    padding: 5px 5px 5px 35px;
+    margin-right: 20px;
+  }
+}
+.popover {
+  left: 0em !important;
+  min-width: 50% !important;
+  background-color: white;
+  padding: 7px !important;
+  box-shadow: 5px 5px 20px 6px rgba(0, 0, 0, 0.2);
+  .popover-name {
+    font-size: 24px;
+    color: #000000;
+  }
+  .arrow {
+    left: 92% !important;
+    border-bottom-color: white !important;
+  }
+  .panel {
+    box-shadow: none;
+  }
+  form {
+    input {
+      border: none;
+      border-bottom: solid 2px #ced1d6;
+      width: 30%;
+      margin: 0 10px 35px 10px;
+      outline: none;
+      padding: 5px;
+      font-size: 16px;
+    }
+    ::-webkit-input-placeholder {
+      color: #ced1d6;
+    }
+    .load-coverage,
+    .status {
+      display: inline-block;
+      font-size: 16px;
+      color: #ced1d6;
+      margin: 0 15px;
+    }
+    .load-status {
+      float: right;
+      margin-left: 5px;
+    }
+    .filter {
+      background-color: #ced1d6;
+      border: solid 1px #ced1d6;
+      color: white;
+    }
+  }
+}

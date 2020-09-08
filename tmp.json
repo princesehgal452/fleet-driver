@@ -1,0 +1,249 @@
+{
+  "data": [
+    {
+      "personId": "44681",
+      "radius": 50,
+      "availableDate": "09/07/2020",
+      "expiresOn": "10/07/2020",
+      "timestamp": 1599464750.3432071,
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "pickup": {
+        "coordinates": {
+          "lat": 43.653226,
+          "lon": -79.3831843
+        },
+        "address": "Toronto, ON, Canada"
+      },
+      "id": "5f55e52e89317b680105c8d0",
+      "dropoff": {
+        "coordinates": {
+          "lng": 0.0,
+          "lat": 0.0
+        },
+        "address": ""
+      }
+    },
+    {
+      "personId": "44681",
+      "radius": 50,
+      "availableDate": "09/07/2020",
+      "expiresOn": "10/07/2020",
+      "timestamp": 1599464741.2221196,
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "pickup": {
+        "coordinates": {
+          "lat": 43.653226,
+          "lon": -79.3831843
+        },
+        "address": "Toronto, ON, Canada"
+      },
+      "id": "5f55e52589317b680105c8ce",
+      "dropoff": {
+        "coordinates": {
+          "lng": 0.0,
+          "lat": 0.0
+        },
+        "address": ""
+      }
+    },
+    {
+      "personId": "44681",
+      "radius": 50,
+      "availableDate": "09/02/2020",
+      "expiresOn": "10/02/2020",
+      "timestamp": 1599079083.1294785,
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "pickup": {
+        "coordinates": {
+          "lat": 43.653226,
+          "lon": -79.3831843
+        },
+        "address": "Toronto, ON, Canada"
+      },
+      "id": "5f5002abdda3015546cc2346",
+      "dropoff": {
+        "coordinates": {
+          "lng": 0.0,
+          "lat": 0.0
+        },
+        "address": ""
+      }
+    },
+    {
+      "personId": "44681",
+      "radius": 50,
+      "availableDate": "08/24/2020",
+      "expiresOn": "09/23/2020",
+      "timestamp": 1598304815.8660574,
+      "equipmentTypeList": [
+        "van"
+      ],
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "pickup": {
+        "coordinates": {
+          "lat": 49.2827291,
+          "lon": -123.1207375
+        },
+        "address": "Vancouver, BC, Canada"
+      },
+      "dropoff": {
+        "coordinates": {
+          "lat": 53.6779743,
+          "lon": -114.3522755
+        },
+        "address": "Alberta Beach, AB T0E, Canada"
+      },
+      "id": "5f44322f0287ccc61bc4d873"
+    },
+    {
+      "personId": "44681",
+      "radius": 50,
+      "availableDate": "08/27/2020",
+      "expiresOn": "09/23/2020",
+      "timestamp": 1598300694.9147718,
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "pickup": {
+        "coordinates": {
+          "lat": 39.9525839,
+          "lon": -75.1652215
+        },
+        "address": "Philadelphia, PA, USA"
+      },
+      "dropoff": {
+        "coordinates": {
+          "lat": 41.8781136,
+          "lon": -87.6297982
+        },
+        "address": "Chicago, IL, USA"
+      },
+      "id": "5f4422165326fc75db13ff17"
+    },
+    {
+      "personId": "44681",
+      "radius": 50,
+      "availableDate": "08/26/2020",
+      "expiresOn": "09/23/2020",
+      "timestamp": 1598300654.7154143,
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "pickup": {
+        "coordinates": {
+          "lat": 43.653226,
+          "lon": -79.3831843
+        },
+        "address": "Toronto, ON, Canada"
+      },
+      "id": "5f4421ee5326fc75db13ff15",
+      "dropoff": {
+        "coordinates": {
+          "lng": 0.0,
+          "lat": 0.0
+        },
+        "address": ""
+      }
+    },
+    {
+      "personId": "44681",
+      "radius": 50,
+      "availableDate": "08/19/2020",
+      "expiresOn": "09/16/2020",
+      "timestamp": 1597688876.2868452,
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "pickup": {
+        "coordinates": {
+          "lat": 49.2827291,
+          "lon": -123.1207375
+        },
+        "address": "Vancouver, BC, Canada"
+      },
+      "id": "5f3acc2cdd34adac046e8382",
+      "dropoff": {
+        "coordinates": {
+          "lng": 0.0,
+          "lat": 0.0
+        },
+        "address": ""
+      }
+    },
+    {
+      "personId": "44681",
+      "radius": 50,
+      "availableDate": "08/19/2020",
+      "expiresOn": "09/16/2020",
+      "timestamp": 1597688849.7632773,
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "pickup": {
+        "coordinates": {
+          "lat": 43.653226,
+          "lon": -79.3831843
+        },
+        "address": "Toronto, ON, Canada"
+      },
+      "id": "5f3acc11dd34adac046e8380",
+      "dropoff": {
+        "coordinates": {
+          "lng": 0.0,
+          "lat": 0.0
+        },
+        "address": ""
+      }
+    },
+    {
+      "personId": "44681",
+      "radius": 100,
+      "availableDate": "08/17/2020",
+      "expiresOn": "09/16/2020",
+      "timestamp": 1597682084.2148545,
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "pickup": {
+        "coordinates": {
+          "lat": 49.2827291,
+          "lon": -123.1207375
+        },
+        "address": "Vancouver, BC, Canada"
+      },
+      "id": "5f3ab1a4359e7b216ef739c7",
+      "dropoff": {
+        "coordinates": {
+          "lng": 0.0,
+          "lat": 0.0
+        },
+        "address": ""
+      }
+    },
+    {
+      "personId": "44681",
+      "radius": 50,
+      "availableDate": "08/13/2020",
+      "expiresOn": "09/12/2020",
+      "timestamp": 1597347203.4250414,
+      "equipmentTypeList": [
+        "van"
+      ],
+      "firebaseUID": "tdQ5jTx4I8g5YzySrACLB0wmwxR2",
+      "perMileRate": {
+        "price": 2.5,
+        "currency": "USD"
+      },
+      "pickup": {
+        "coordinates": {
+          "lat": 43.65691959999999,
+          "lon": -79.5606293
+        },
+        "address": "37 Merrygale Crescent, Etobicoke, ON M9B 5N9, Canada"
+      },
+      "dropoff": {
+        "coordinates": {
+          "lat": 34.0522342,
+          "lon": -118.2436849
+        },
+        "address": "Los Angeles, CA, USA"
+      },
+      "id": "5f35958322e9f0c8b511f153"
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "offset": 0,
+    "totalPages": 2
+  }
+}

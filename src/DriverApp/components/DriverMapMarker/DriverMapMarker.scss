@@ -1,0 +1,11 @@
+.info-item {
+  display: flex;
+  margin-bottom: 5px;
+  &__title {
+    font-weight: bold;
+    padding: 0 5px;
+  }
+  &__value {
+    padding: 0 5px;
+  }
+}

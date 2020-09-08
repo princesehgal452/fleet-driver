@@ -1,0 +1,16 @@
+<svg width="23px" height="100px" viewBox="0 0 23 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FleetOps-Elements-Copy" transform="translate(-164.000000, -1779.000000)">
+            <g id="Icon/arrival" transform="translate(164.000000, 1851.000000)" fill="#4DA839" class="secondaryMain">
+                <path d="M6.03348062,11.2000189 C6.03348062,8.34646506 8.34666364,6.03343907 11.2000605,6.03343907 C14.0534573,6.03343907 16.3667974,8.34646506 16.3667974,11.2000189 C16.3667974,14.0534158 14.0534573,16.3664418 11.2000605,16.3664418 C8.34666364,16.3664418 6.03348062,14.0534158 6.03348062,11.2000189 Z M10.6400377,27.8132334 C10.9720673,28.0622555 11.4282107,28.0622555 11.7602403,27.8132334 C12.1989085,27.4867641 22.400278,19.7307366 22.400278,11.2000397 C22.400278,5.01440076 17.3856787,0 11.2000397,0 C5.01459934,0 0,5.01440076 0,11.2000397 C0,19.7307366 10.2013695,27.4867641 10.6400377,27.8132334 Z" id="Page-1"></path>
+            </g>
+            <g id="Icon/departure" transform="translate(166.000000, 1781.000000)" fill="#F6851F" class="primaryMain">
+                <circle id="Oval-4" cx="8.5" cy="9.5" r="10"></circle>
+            </g>
+            <path d="M174.5,1805.5 L174.5,1852" id="Icon/Line" stroke="#282828" stroke-width="5" stroke-linecap="square" stroke-dasharray="4,8"></path>
+        </g>
+    </g>
+</svg>

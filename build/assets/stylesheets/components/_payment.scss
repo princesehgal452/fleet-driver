@@ -1,0 +1,91 @@
+.payment {
+  .payment-success-title {
+    text-align: center;
+  }
+
+  .payment-title {
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  .payment-box {
+    position: relative;
+    form {
+      display: inline-block;
+      width: 100%;
+      padding: 30px;
+    }
+    .box {
+      padding: 30px;
+    }
+    .row {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .payment-form-overlay {
+    @include flex-c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: $borderFocusColor;
+    border: 2px solid $borderFocusColor;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .StripeElement {
+    border-bottom: 2px solid $bordercolor;
+    padding: 8px 12px 15px;
+    position: relative;
+    cursor: text;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: $borderFocusColor;
+      transition: 150ms;
+    }
+
+    &.StripeElement--focus, &:not(.StripeElement--empty) {
+      &:after {
+        @include transform(translateX(-50%));
+        transition: 150ms;
+        width: 100%;
+      }
+      + .payment-label {
+        opacity: 1;
+        top: -15px;
+      }
+    }
+  }
+
+  .payment-label {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $linkText;
+    opacity: 0;
+    transition: 150ms;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 0;
+  }
+}

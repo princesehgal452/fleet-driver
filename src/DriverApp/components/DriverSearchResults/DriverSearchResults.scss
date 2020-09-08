@@ -1,0 +1,59 @@
+@import "../../../assets/stylesheets/utils/all";
+@import "../../../assets/stylesheets/migration/variables";
+
+.no-data-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .no-data-image {
+    max-height: 150px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media (min-width: 320px)  {
+      max-height: 150px;
+      margin-bottom: 30px;
+    }
+    @include media(minMob) {
+      max-height: 230px;
+      margin-bottom: 30px;
+    }
+    @include media(minTab) {
+      max-height: 300px;
+      margin-bottom: 50px;
+    }
+    @include media(minDesktopSm) {
+      max-height: 300px;
+      margin-bottom: 60px;
+    }
+  }
+  .no-data-title {
+    font-size: 18px;
+    color: #282828;
+    letter-spacing: 0.32px;
+    text-align: center;
+    line-height: 16px;
+    padding-bottom: 10px;
+    @include media(minTab) {
+      font-size: 24px;
+    }
+  }
+  .no-data-description {
+    font-size: 14px;
+    color: #626163;
+    letter-spacing: 0.32px;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 20px;
+    @include media(minTab) {
+      font-size: 18px;
+      line-height: 35px;
+    }
+    &--link {
+      color: $link;
+      font-family: Roboto, sans-serif ;
+    }
+  }
+}

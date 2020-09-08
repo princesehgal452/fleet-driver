@@ -1,0 +1,28 @@
+.driver-more-popover {
+  display: flex;
+  padding: 10px 15px;
+  flex-direction: column;
+  .btn-popover {
+    height: 50px;
+    padding: 3px 25px;
+    border-radius: 10px !important;
+    color: #241606;
+    &--first,
+    &-middle {
+      height: 51px;
+      border-bottom: 1px solid #979797;
+    }
+    &--first {
+      border-radius: 10px 10px 0 0 !important;
+    }
+    &-middle {
+      border-radius: 0 !important;
+    }
+    &--last {
+      border-radius: 0 0 10px 10px !important;
+    }
+    &--cancel {
+      margin-top: 6px;
+    }
+  }
+}

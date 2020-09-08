@@ -1,0 +1,12 @@
+.pickupDropOffLocation {
+  width: 100%;
+  &__pickDropIcon {
+    width: 15px;
+    height: 90px;
+  }
+  .input-field {
+    svg {
+      color: #666;
+    }
+  }
+}

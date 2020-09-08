@@ -1,0 +1,17 @@
+@import '../../../assets/stylesheets/utils/all';
+
+.OnboardNewDriverModal {
+  .odometer {
+    transform: scale(2.5);
+    background-color: #080808;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 5px;
+    padding: 5px 5px 5px 10px;
+    color: #FFFFFF;
+    margin: 20px 0;
+    box-shadow: 0 0 0.2px 0.2px rgba(0, 0, 0, 0.71)
+  }
+  .listItem {
+    padding: 2px 0;
+  }
+}

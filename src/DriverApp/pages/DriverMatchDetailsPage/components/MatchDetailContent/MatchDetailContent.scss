@@ -1,0 +1,124 @@
+@import "../../../../../assets/stylesheets/utils/all";
+@import "../../../../../assets/stylesheets/migration/variables";
+
+.match-detail-page {
+  width: 100%;
+  &__sectionTitle {
+    padding: 15px 20px 10px;
+    h2 {
+      font-size: 14px;
+      color: #241606;
+    }
+  }
+  &__sectionBody {
+    padding: 10px 20px;
+  }
+  &__header {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__like {
+    svg{
+      font-size: 30px;
+    }
+  }
+  &__content {
+    padding: 20px;
+    .bid-title {
+      font-size: 14px;
+
+      padding: 0 10px;
+      @include media(minDesktopSm) {
+        font-size: 18px;
+      }
+    }
+    .bid-col {
+      padding: 6px 10px;
+    }
+    .input-default {
+      >div {
+        font-size: 14px;
+        color: #282828;
+        letter-spacing: -0px;
+        input {
+          font-size: 12px;
+          @include media(minDesktopSm) {
+            font-size: 14px;
+          }
+        }
+        &::before {
+          border-color: rgba(0, 0, 0, 0.6);
+        }
+        &::after {
+          border-color: rgba(0, 0, 0, 0.6);
+        }
+        &:hover {
+          &::before {
+            border-color: rgba(0, 0, 0, 0.6) !important;
+          }
+        }
+        >div {
+          p {
+            font-size: 12px;
+            color: rgba(0,0,0,0.80);
+            letter-spacing: 0;
+            padding-top: 5px;
+            @include media(minDesktopSm) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      >span {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      > p {
+        font-size: 10px;
+        letter-spacing: -0px;
+        @include media(minDesktopSm) {
+          font-size: 12px;
+        }
+      }
+      &--rate {
+        > p {
+          font-size: 10px;
+          color: #75897A;
+          letter-spacing: -0px;
+        }
+      }
+    }
+    .load-info-title {
+      font-size: 14px;
+
+      @include media(minDesktopSm) {
+        font-size: 18px;
+      }
+    }
+    .load-info-text {
+      font-size: 14px;
+      color: #47614E;
+      padding-top: 5px;
+      @include media(minDesktopSm) {
+        font-size: 18px;
+      }
+    }
+  }
+  .location-text {
+    font-size: 14px;
+
+    color: #282828;
+    @include media(minDesktopSm) {
+      font-size: 18px;
+    }
+  }
+  .date-text {
+    font-size: 14px;
+
+    color: #193A22;
+    @include media(minDesktopSm) {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../../assets/stylesheets/utils/all";
+@import "../../../assets/stylesheets/migration/variables";
+
+.search-loads-page {
+  &__header {
+    width: 100%;
+    z-index: 1;
+  }
+  &__content {
+    padding-top: 118px;
+    z-index: 1;
+    .loading-spinner-container {
+      height: auto;
+    }
+  }
+  .default_truck_image {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    margin: 0 auto;
+    @include media(maxDesktopSm) {
+      //bottom: 60px;
+    }
+    @media (min-width: 320px) {
+      max-height: 180px;
+    }
+    @include media(minMob) {
+      max-height: 230px;
+    }
+    @include media(minTab) {
+      max-height: 400px;
+    }
+  }
+}

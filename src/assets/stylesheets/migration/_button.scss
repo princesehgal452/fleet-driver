@@ -1,0 +1,22 @@
+@import "../utils/all";
+.fo-button {
+  box-sizing: border-box;
+  height: 62px;
+  border: 2px solid $darkOrange;
+  border-radius: 4px;
+  background-color: $darkOrange;
+  outline: none;
+  color: white;
+  transition: 0.5s all;
+
+  &:focus, &:hover {
+    background-color: darken($darkOrange, 2%);
+  }
+
+  &:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: not-allowed;
+    border: 2px solid #eee;
+  }
+}

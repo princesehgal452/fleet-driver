@@ -1,0 +1,99 @@
+@import "../../../../../assets/stylesheets/utils/all";
+@import "../../../../../assets/stylesheets/migration/variables";
+
+.driver-account-popover {
+  padding: 30px 15px;
+  width: 100vw;
+  max-width: 250px;
+  @include media(minDesktopSm) {
+    padding: 50px 25px;
+    max-width: 400px;
+  }
+  .profile-section {
+    text-align: center;
+    .user-photo {
+      display: flex;
+      margin: auto;
+      width: 80px;
+      height: 80px;
+      border: 1px solid #666666;
+      border-radius: 100%;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      .alt-text {
+        font-size: 20px;
+        color: #241606;
+      }
+      @include media(minDesktopSm) {
+        width: 100px;
+        height: 100px;
+        .alt-text {
+          font-size: 26px;
+        }
+      }
+    }
+    .user-name {
+      padding-top: 15px;
+      font-size: 20px;
+      color: #241606;
+      letter-spacing: -0px;
+      text-align: left;
+      text-align: center;
+      @include media(minDesktopSm) {
+        font-size: 26px;
+      }
+    }
+    .user-email {
+      padding-top: 5px;
+      font-size: 16px;
+      color: #241606;
+      letter-spacing: -0px;
+      text-align: left;
+      text-align: center;
+      font-weight: 100;
+      @include media(minDesktopSm) {
+        font-size: 18px;
+      }
+    }
+  }
+  .menu-section {
+    display: flex;
+    height: calc(100vh - 200px);
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @include media(minDesktopSm) {
+      height: calc(100vh - 260px);
+    }
+    .actions-section {
+      width: 100%;
+      .btn-action {
+        font-size: 18px;
+        color: #241606;
+        letter-spacing: -0px;
+        text-align: left;
+        font-weight: 500;
+        border-radius: 0 !important;
+        height: 50px;
+        padding: 3px !important;
+        span {
+          justify-content: normal;
+        }
+        @include media(minDesktopSm) {
+          font-size: 22px;
+        }
+      }
+    }
+    .logo-section {
+      .driver-logo {
+        width: 150px;
+        @include media(minDesktopSm) {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

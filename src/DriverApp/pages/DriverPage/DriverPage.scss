@@ -1,0 +1,49 @@
+@import "../../../assets/stylesheets/utils/all";
+@import "../../../assets/stylesheets/migration/variables";
+
+.driver-template-page {
+  display: flex;
+  height: 100%;
+
+  &__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    @media (min-width: 960px) {
+      padding-left: 200px;
+    }
+    @media (max-width: 960px) {
+      padding-bottom: 64px;
+    }
+  }
+
+  &__main {
+    height: 100%;
+  }
+
+  &__content {
+    flex: 1;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+.driver-page-content {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  @media (max-width: 960px) {
+    padding-bottom: 68px;
+  }
+  @include media(minTab) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @include media(minDesktopSm) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}

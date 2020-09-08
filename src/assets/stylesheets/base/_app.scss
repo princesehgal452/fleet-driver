@@ -1,0 +1,116 @@
+html, body, body>div {
+  height: 100%;
+}
+
+body {
+  color: $themeText;
+  background-color: $bgGray;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+
+.box {
+  border-radius: 4px;
+  padding: $defaultPadding;
+  background-color: $bgWhite;
+  box-shadow: $boxShadow;
+  margin-bottom: 20px;
+  .box-title, .active-text {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .active-text {
+    font-weight: 600;
+  }
+}
+
+.flex-box {
+  @include display-flex;
+  &.space-around {
+    justify-content: space-around;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.item-center {
+    align-items: center;
+  }
+}
+
+.container-fluid {
+  padding-top: $defaultPadding;
+  padding-right: $defaultPadding;
+  padding-bottom: $defaultPadding;
+  padding-left: $defaultPadding;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+
+.active-text {
+  color: $activeText;
+}
+
+.danger-text {
+  color: $dangerText;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  span {
+    background-color: $bgGray;
+    padding-right: 10px;
+    position: relative;
+  }
+}
+
+.empty {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: $helpText;
+  background-color: #eee;
+}
+
+.btn.btn-primary {
+  @include btn(#fff, #48bf83);
+}
+
+.btn.btn-danger {
+  @include btn(#fff, #fc7166);
+}
+
+.btn.btn-info {
+  @include btn(#fff, #3697d7);
+  line-height: 1.5;
+}
+
+.app-container {
+  margin: auto;
+  position: relative;
+  padding-top: 50px;
+}
+
+.hidden {
+  display: none !important;
+}

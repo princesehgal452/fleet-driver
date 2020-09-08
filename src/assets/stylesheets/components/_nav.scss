@@ -1,0 +1,104 @@
+nav.header {
+  @include display-flex;
+  @include flex-middle;
+  @include flex-between;
+  top: 0;
+  box-shadow: $boxShadow;
+  background: #393C43;
+  height: 50px;
+  padding: 0 25px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  &:after {
+    display: none;
+  }
+
+  #logo {
+    img {
+      height: 45px;
+    }
+  }
+}
+
+.dropdown-toggle:after {
+  vertical-align: 0.135em;
+}
+
+.dropdown-menu a {
+  cursor: pointer;
+}
+
+.header-buttons {
+  @include flex-r;
+  height: 100%;
+  background: #393C43;
+  height: 50px;
+  padding: 0 25px;
+  position: absolute;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #393d43;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1024;
+  padding: 0.2em 0em;
+
+  #logo {
+    img {
+      width: 10em;
+    }
+  }
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+  .new-load {
+    img {
+      width: 15px;
+      position: relative;
+      top: -2px;
+      left: -5px;
+    }
+  }
+  .profile {
+    color: #fff;
+    position: relative;
+    top: 7px;
+    img {
+      width: 10px;
+    }
+  }
+  .icon-bell {
+    width: 25px;
+    padding-top: 6px;
+  }
+  .btn-logout {
+    height: 22px;
+    font-size: 0.8em;
+    margin-top: 10px;
+    line-height: 0;
+  }
+  .notification {
+    .notification-badge {
+      position: absolute;
+      top: 1.25em;
+      right: 14.75em;
+      height: 20px;
+      width: 20px;
+      border-radius: 10px;
+      background-color: #ff7845;
+      font-size: 12px;
+      padding-left: 7px;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav.header {
+    @include flex-c;
+  }
+}

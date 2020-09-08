@@ -1,0 +1,131 @@
+@import "../../assets/stylesheets/utils/all";
+@import "../../assets/stylesheets/utils/v2_variables";
+
+.auth-home-page {
+  background: $bigRoadDefaultBackground;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: 10px 20px;
+    z-index: 1;
+    @include media(minDesktopSm) {
+      padding: 40px 20px;
+    }
+    .logo-image {
+      width: 50vmin;
+      @include media(minDesktopSm) {
+        margin-bottom: 20px;
+      }
+    }
+    .auth-carousel {
+      .welcome-image {
+        min-height: 25vh;
+      }
+      .welcome-title {
+        color: #21211F;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        margin-bottom: 5px;
+        text-align: center;
+        @include media(minDesktopSm) {
+          font-size: 30px;
+          letter-spacing: 0.9px;
+          margin-bottom: 10px;
+        }
+      }
+      .welcome-text {
+        font-size: 14px;
+        letter-spacing: 0;
+        color: #797979;
+        text-align: center;
+        @include media(minDesktopSm) {
+          font-size: 22px;
+          letter-spacing: 0.76px;
+          line-height: 26px;
+        }
+      }
+      .auth-carousel-stepper {
+        text-align: center;
+        &--title {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 2em;
+          color: $titleH2
+        }
+        &--subheading {
+          color: $titleH3
+        }
+      }
+    }
+    .tutorial-slider {
+      background: transparent;
+      justify-content: center;
+      margin: 6px;
+    }
+    .login-form {
+      width: 100%;
+      .forgot-password {
+        color: #3385AA;
+        letter-spacing: 0.67px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 28px;
+        display: block;
+        text-decoration: underline;
+        font-size: 14px;
+        margin-top: 5px;
+        @include media(minDesktopSm) {
+          font-size: 18px;
+          margin-top: 20px;
+        }
+      }
+      .btn-signup {
+        width: 100%;
+        background-color: #F6851F;
+        margin-top: 15px;
+        height: 40px;
+        color: #FFFFFF;
+        font-size: 18px;
+        border-radius: 100px;
+        @include media(minDesktopSm) {
+          margin-top: 30px;
+          height: 45px;
+          font-size: 16px;
+        }
+      }
+      .btn-login {
+        width: 100%;
+        // background-color: ;
+        margin-top: 15px;
+        height: 40px;
+        color: #F6851F;
+        border: 1px solid #F6851F;
+        border-radius: 100px;
+        font-size: 18px;
+        @include media(minDesktopSm) {
+          margin-top: 30px;
+          height: 45px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .truck-image {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    bottom: 0;
+  }
+}

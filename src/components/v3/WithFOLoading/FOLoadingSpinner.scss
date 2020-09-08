@@ -1,0 +1,9 @@
+@import '../../../assets/stylesheets/utils/mixins';
+
+.loading-spinner-container {
+    @include flex-c;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,41 @@
+@import "../../assets/stylesheets/utils/all";
+@import "../../assets/stylesheets/utils/v2_variables";
+
+.fo-pagination {
+  position: relative;
+  margin-top: 5px;
+  &__container {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    //color: $primaryMain;
+    font-family: Roboto, sans-serif;
+    .disabled {
+      a {
+        pointer-events: none;
+        color: #e0e0e0;
+      }
+    }
+  }
+
+  &__page-link {
+    font-weight: 600;
+
+    &:hover {
+      background-color: #e0e0e0;
+      font-weight: 650;
+      font-size: 20px;
+    }
+  }
+
+  &--active {
+    a {
+      color: $primaryMain;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+}

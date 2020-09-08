@@ -1,0 +1,112 @@
+$header-height: 50px;
+$top-panel-height: 250px;
+$load-truck-detail-height: 210px;
+
+.admin {
+  overflow: hidden;
+  height: calc(100vh - #{$header-height});
+
+  .admin-top-panel {
+    height: $top-panel-height;
+  }
+
+  .admin-match-section {
+    border-top: 1px solid #EEE;
+    height: calc(100vh - #{$top-panel-height} - #{$header-height} - #{$load-truck-detail-height});
+  }
+
+  .admin-map-section, .admin-sidebar {
+    height: 100%;
+    float: left;
+  }
+  .admin-map-section {
+    width: calc(100% - 270px);
+  }
+
+  .admin-match-form input {
+    width: 100%;
+  }
+
+  .object-details {
+    height: $load-truck-detail-height;
+  }
+
+  .admin-details {
+    background-color: #FFF;
+    border-right: 1px solid #EEE;
+
+    .admin-details__header {
+      padding-left: 20px;
+    }
+  }
+
+  .admin-sidebar {
+    width: 270px;
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EEE;
+    padding: 10px;
+  }
+
+  .admin-match-form {
+    flex: 0 1 auto;
+  }
+
+  .admin-active-match {
+    overflow-y: scroll;
+
+    .load-status {
+      margin-bottom: 5px;
+      margin-right: 2px;
+      cursor: pointer;
+    }
+
+    .load-status.unselected {
+      opacity: 0.4;
+    }
+  }
+
+  .admin-active-match__item {
+    padding: 5px 0;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .admin-active-match__item.active {
+    background-color: #333;
+    color: #FFF;
+    padding: 2px;
+  }
+
+  .active-match-label--accepted {
+    color: #41c081;
+  }
+
+  .active-match-label--pending {
+    color: #ff7163;
+  }
+
+  .active-match-label--noMatch {
+    color: #ff7163;
+  }
+
+  .active-match-label--rejected {
+    color: #ff7163;
+  }
+
+  .active-match-label--paid {
+    color: #3697d7;
+  }
+
+  .admin-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+}

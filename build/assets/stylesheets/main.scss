@@ -1,0 +1,27 @@
+@import './utils/all';
+@import './notifications/notifications';
+@import './base/all';
+@import './components/all';
+
+// migration
+@import "migration/button";
+body > div {
+  height: auto;
+}
+
+div.root {
+  height: 100%;
+  @media only screen and (max-width: 600px) {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+      &::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
+    }
+  }
+}
+
+div[class*='MuiCollapse-entered'] {
+  overflow: visible;
+}

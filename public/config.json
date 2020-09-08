@@ -1,0 +1,16 @@
+{
+  "name": "Fleetops",
+  "supportEmail": "team@freighttab.com",
+  "version": "1.0.0",
+  "items": [
+    {
+      "url": "https://s3-us-west-2.amazonaws.com/geotab-staging.fleetops.ai/index.html",
+      "path": "FreightTab/",
+      "menuName": {
+        "en": "FreightTab"
+      },
+      "icon": "https://s3-us-west-2.amazonaws.com/geotab-staging.fleetops.ai/assets/images/png/FO-Logo.png"
+    }
+  ],
+  "isSigned": false
+}

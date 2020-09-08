@@ -1,0 +1,1029 @@
+[
+  {
+    'matchId': ObjectId(
+    '5f560a475eb58d0001b3acae'
+    ),
+    'loadId': ObjectId(
+    '5f5458222da4df0114d4dd96'
+    ),
+    'status': 'RAL',
+    'notifications': {},
+    'timestamp': 1599474243,
+    'cost': 0,
+    'personId': '44681',
+    'interactions': [],
+    'autoMatchId': None,
+    'uploadedFiles': {},
+    'active': True,
+    'accepted': False,
+    'liked': False,
+    'sentBy': '',
+    'load': {
+      'loadId': ObjectId(
+      '5f5458222da4df0114d4dd96'
+      ),
+      'shortId': 'fo-m2qp',
+      'status': 'PC',
+      'trackingNumber': '',
+      'account': SON(
+  [
+    (
+    'distance',
+    570),
+    (
+    'stops',
+    1),
+    (
+    'loadCount',
+    1),
+    (
+    'fullLoad',
+    True)
+  ]
+  ),
+  'brokerId'
+  :
+  'wswDSzqXSqMmuaXwTJnBYAjHuTm1',
+  'token'
+  :
+  '',
+  'source'
+  :
+  'FleetOps',
+  'key'
+  :
+  '',
+  'payload'
+  :
+  {
+    'loadPay': {
+      'amount': 0.0,
+      'perMileRate': False,
+      'currency': 'CAD',
+      'priceIsEstimated': False,
+      'range': {
+        'high': None,
+        'originalHigh': None,
+        'low': None,
+        'originalLow': None
+      },
+      'emailUpdates': None,
+      'originalAmount': None
+    },
+    'daysUntilPayment': None,
+    'customerName': None,
+    'assignedDate': datetime.datetime(2020,
+    9,
+    6,
+    3,
+    31,
+    45,
+    60000),
+    'loadStatus': 'PC',
+    'tripDetails': {
+      'pickupStartTime': '',
+      'pickupEndTime': '',
+      'dropoffs': [
+        {
+          'dropoffEndDate': '',
+          'dropoffEndTime': '',
+          'dropoffStartDate': datetime.datetime(2020,
+          9,
+          8,
+          0,
+          0),
+          'cosigneeInfo': {
+            'address': {
+              'description': '',
+              'coordinates': '',
+              'city': '',
+              'state': '',
+              'country': '',
+              'county': '',
+              'streetNumber': '',
+              'streetName': '',
+              'postalCode': ''
+            },
+            'fullName': '',
+            'hideReceiverInfo': None,
+            'freightCharges': None
+          },
+          'dropoffLocation': 'Lexington, KY, USA',
+          'dropoffStartTime': '',
+          'dropoffCoordinates': {
+            'lat': 38.0405837,
+            'lng': -84.5037164
+          },
+          'receiverInfo': {
+            'fullName': '',
+            'address': [
+              {
+                'description': '',
+                'coordinates': '',
+                'city': '',
+                'state': '',
+                'country': '',
+                'county': '',
+                'streetNumber': '',
+                'streetName': '',
+                'postalCode': ''
+              }
+            ]
+          },
+          'dropoffAddress': {
+            'city': 'Lexington',
+            'county': 'Fayette County',
+            'state': 'Kentucky',
+            'country': 'United States',
+            'streetNumber': '',
+            'streetName': '',
+            'postalCode': ''
+          }
+        }
+      ],
+      'pickupLocation': 'Toronto, ON, Canada',
+      'hideAddressInfo': None,
+      'pickupCoordinates': {
+        'lat': 43.653226,
+        'lng': -79.3831843
+      },
+      'pickupStartDate': datetime.datetime(2020,
+      9,
+      7,
+      0,
+      0),
+      'pickupEndDate': '',
+      'pickupAddress': {
+        'city': 'Toronto',
+        'county': 'Toronto Division',
+        'state': 'Ontario',
+        'country': 'Canada',
+        'streetNumber': '',
+        'streetName': '',
+        'postalCode': ''
+      }
+    },
+    'loads': [
+      {
+        'loadContentDetails': {
+          'weight': {
+            'unit': 'lb(s)',
+            'amount': 25000
+          },
+          'equipmentTypes': {
+            'specialized': {
+              'animalCarrier': False,
+              'movingVan': False,
+              'heavyHaulers': False,
+              'boatHauler': False
+            },
+            'container': False,
+            'tanker': False,
+            'auto': False,
+            'reefer': False,
+            'flatbed': {
+              'stepDeck': False,
+              'maxi': False,
+              'doubleDrop': False,
+              'lowboy': False,
+              'removableGooseneck': False,
+              'flatbed': False,
+              'landoll': False
+            },
+            'powerOnly': False,
+            'van': False,
+            'hopperBottom': False,
+            'dumpTruck': False
+          },
+          'additional': {
+            'cashOnDelivery': None,
+            'teamRequired': None,
+            'mode': {
+              'prepaid': None,
+              'collect': None
+            },
+            'customerCheck': None
+          },
+          'handlingUnits': {
+            'type': None,
+            'amount': None
+          },
+          'ftl': True,
+          'ltl': {
+            'nfmcClass': None
+          },
+          'equipmentSpecifications': {
+            'hazMat': False,
+            'palletExchange': False,
+            'liftGate': False,
+            'curtains': False,
+            'airRide': False,
+            'insulated': False,
+            'tempControlled': False,
+            'openTop': False,
+            'eTrack': False,
+            'walkingFloor': False,
+            'hotShot': False,
+            'conestoga': False,
+            'extendable': False,
+            'blanketWrap': False,
+            'sideKit': False,
+            'bTrain': False,
+            'chassis': False,
+            'chains': False,
+            'loadRamps': False,
+            'loadOut': False,
+            'intermodal': False,
+            'vented': False,
+            'tarps': False
+          },
+          'package': {
+            'type': None,
+            'quantity': None
+          },
+          'commodityDescription': {
+            'hazardousMaterialsCheck': None,
+            'description': 'Metal: sheets, coils, rolls',
+            'specialCareInstructions': ''
+          },
+          'dimensions': {
+            'length': {
+              'unit': 'inch',
+              'amount': 0
+            },
+            'height': {
+              'unit': 'inch',
+              'amount': 0
+            },
+            'width': {
+              'unit': 'inch',
+              'amount': 0
+            }
+          }
+        }
+      }
+    ],
+    'brokerName': [
+      'FO Test Broker N'
+    ],
+    'loadName': None
+  },
+  'locationProcessingRetry'
+  :
+  0,
+  'locationProcessed'
+  :
+  False,
+  'postedBy'
+  :
+  {
+    'companyName': 'FleetOps',
+    'displayName': 'FO Test Broker N',
+    'email': 'test+user1@fleetops.ai',
+    'phone': '+14541231212',
+    'companyLogo': 'https://fleetops-user-documents.s3.amazonaws.com/5b3d2686bdafc7000a609290/profile/companyLogo.png'
+  },
+  'interactions'
+  :
+  []
+  },
+  'ral_id'
+  :
+  '5f4421ee5326fc75db13ff15',
+  'metadata'
+  :
+  {}
+  },
+  {
+    'matchId': ObjectId(
+    '5f560a475eb58d0001b3acaf'
+    ),
+    'loadId': ObjectId(
+    '5f5459fa2da4df0115c5000e'
+    ),
+    'status': 'RAL',
+    'notifications': {},
+    'timestamp': 1599474243,
+    'cost': 0,
+    'personId': '44681',
+    'interactions': [],
+    'autoMatchId': None,
+    'uploadedFiles': {},
+    'active': True,
+    'accepted': False,
+    'liked': False,
+    'sentBy': '',
+    'load': {
+      'loadId': ObjectId(
+      '5f5459fa2da4df0115c5000e'
+      ),
+      'shortId': 'fo-m2qq',
+      'status': 'PC',
+      'trackingNumber': '',
+      'account': SON(
+  [
+    (
+    'distance',
+    2195),
+    (
+    'stops',
+    1),
+    (
+    'loadCount',
+    1),
+    (
+    'fullLoad',
+    True)
+  ]
+  ),
+  'brokerId'
+  :
+  'wswDSzqXSqMmuaXwTJnBYAjHuTm1',
+  'token'
+  :
+  '',
+  'source'
+  :
+  'FleetOps',
+  'key'
+  :
+  '',
+  'payload'
+  :
+  {
+    'tripDetails': {
+      'pickupLocation': 'Toronto, ON, Canada',
+      'pickupCoordinates': {
+        'lat': 43.653226,
+        'lng': -79.3831843
+      },
+      'pickupAddress': {
+        'streetNumber': '',
+        'streetName': '',
+        'city': 'Toronto',
+        'state': 'Ontario',
+        'postalCode': '',
+        'country': 'Canada',
+        'county': 'Toronto Division'
+      },
+      'pickupStartDate': datetime.datetime(2020,
+      9,
+      8,
+      0,
+      0),
+      'pickupStartTime': None,
+      'pickupEndDate': '',
+      'pickupEndTime': None,
+      'pickupAppointmentRequired': False,
+      'dropoffs': [
+        {
+          'dropoffLocation': 'Boise, ID, USA',
+          'dropoffCoordinates': {
+            'lat': 43.6150186,
+            'lng': -116.2023137
+          },
+          'dropoffAddress': {
+            'streetNumber': '',
+            'streetName': '',
+            'city': 'Boise',
+            'state': 'Idaho',
+            'postalCode': '',
+            'country': 'United States',
+            'county': 'Ada County'
+          },
+          'dropoffStartDate': datetime.datetime(2020,
+          9,
+          11,
+          0,
+          0),
+          'dropoffStartTime': None,
+          'dropoffEndDate': '',
+          'dropoffEndTime': None,
+          'dropoffAppointmentRequired': False,
+          'consigneeInfo': {
+            'fullName': '',
+            'address': {
+              'description': '',
+              'coordinates': '',
+              'city': '',
+              'state': '',
+              'country': '',
+              'county': '',
+              'streetNumber': '',
+              'streetName': '',
+              'postalCode': ''
+            },
+            'phone': ''
+          },
+          'receiverInfo': {
+            'fullName': '',
+            'address': {
+              'description': '',
+              'coordinates': '',
+              'city': '',
+              'state': '',
+              'country': '',
+              'county': '',
+              'streetNumber': '',
+              'streetName': '',
+              'postalCode': ''
+            },
+            'phone': ''
+          }
+        }
+      ]
+    },
+    'loadPay': {
+      'priceIsEstimated': False,
+      'currency': 'CAD',
+      'perMileRate': False,
+      'amount': 3400,
+      'shipperAmount': 0
+    },
+    'loads': [
+      {
+        'loadContentDetails': {
+          'dropoffLocation': 'Boise, ID, USA',
+          'weight': {
+            'amount': 14000,
+            'unit': 'lb(s)'
+          },
+          'commodityDescription': {
+            'description': 'General Freight',
+            'specialCareInstructions': 'Hello',
+            'hazardousMaterialsCheck': False
+          },
+          'dimensions': {
+            'height': {
+              'amount': 0,
+              'unit': 'inch'
+            },
+            'length': {
+              'amount': 0,
+              'unit': 'inch'
+            },
+            'width': {
+              'amount': 0,
+              'unit': 'inch'
+            }
+          },
+          'ftl': True,
+          'stackable': False,
+          'equipmentTypes': {
+            'specialized': {
+              'animalCarrier': False,
+              'movingVan': False,
+              'heavyHaulers': False,
+              'boatHauler': False
+            },
+            'container': False,
+            'tanker': False,
+            'auto': False,
+            'reefer': False,
+            'flatbed': {
+              'stepDeck': False,
+              'maxi': False,
+              'doubleDrop': False,
+              'lowboy': False,
+              'removableGooseneck': False,
+              'flatbed': False,
+              'landoll': False
+            },
+            'powerOnly': False,
+            'van': True,
+            'hopperBottom': False,
+            'dumpTruck': False
+          }
+        }
+      }
+    ],
+    'assignedDate': datetime.datetime(2020,
+    9,
+    6,
+    3,
+    40,
+    57,
+    121000)
+  },
+  'locationProcessingRetry'
+  :
+  0,
+  'locationProcessed'
+  :
+  False,
+  'postedBy'
+  :
+  {
+    'companyName': 'FleetOps',
+    'displayName': 'FO Test Broker N',
+    'email': 'test+user1@fleetops.ai',
+    'phone': '+14541231212',
+    'companyLogo': 'https://fleetops-user-documents.s3.amazonaws.com/5b3d2686bdafc7000a609290/profile/companyLogo.png'
+  },
+  'interactions'
+  :
+  []
+  },
+  'ral_id'
+  :
+  '5f4421ee5326fc75db13ff15',
+  'metadata'
+  :
+  {}
+  },
+  {
+    'matchId': ObjectId(
+    '5f560a475eb58d0001b3acb0'
+    ),
+    'loadId': ObjectId(
+    '5f5457bd2da4df0115c5000a'
+    ),
+    'status': 'RAL',
+    'notifications': {},
+    'timestamp': 1599474243,
+    'cost': 0,
+    'personId': '44681',
+    'interactions': [],
+    'autoMatchId': None,
+    'uploadedFiles': {},
+    'active': True,
+    'accepted': False,
+    'liked': False,
+    'sentBy': '',
+    'load': {
+      'loadId': ObjectId(
+      '5f5457bd2da4df0115c5000a'
+      ),
+      'shortId': 'fo-m2qo',
+      'status': 'PC',
+      'trackingNumber': '',
+      'account': SON(
+  [
+    (
+    'distance',
+    1137),
+    (
+    'stops',
+    1),
+    (
+    'loadCount',
+    1),
+    (
+    'fullLoad',
+    True)
+  ]
+  ),
+  'brokerId'
+  :
+  'wswDSzqXSqMmuaXwTJnBYAjHuTm1',
+  'token'
+  :
+  '',
+  'sourc127.0.0.1 - - [07/Sep/2020 15:55:00] "GET /v1/matches/ral/5f4421ee5326fc75db13ff15 HTTP/1.1" 200 -
+  e
+  ': '
+  FleetOps
+  ', '
+  key
+  ': '
+  ', '
+  payload
+  ': {'
+  loadPay
+  ': {'
+  amount
+  ': 6000.0, '
+  perMileRate
+  ': 5.28, '
+  currency
+  ': '
+  CAD
+  ', '
+  priceIsEstimated
+  ': False, '
+  range
+  ': {'
+  high
+  ': None, '
+  originalHigh
+  ': None, '
+  low
+  ': None, '
+  originalLow
+  ': None}, '
+  emailUpdates
+  ': None, '
+  originalAmount
+  ': None}, '
+  daysUntilPayment
+  ': None, '
+  customerName
+  ': None, '
+  assignedDate
+  ': datetime.datetime(2020, 9, 6, 3, 30, 4, 143000), '
+  loadStatus
+  ': '
+  PC
+  ', '
+  tripDetails
+  ': {'
+  pickupStartTime
+  ': '
+  10
+  :
+  00
+  AM
+  ', '
+  pickupEndTime
+  ': '
+  12
+  :
+  00
+  PM
+  ', '
+  dropoffs
+  ': [{'
+  dropoffEndDate
+  ': '
+  ', '
+  dropoffEndTime
+  ': None, '
+  dropoffStartDate
+  ': datetime.datetime(2020, 9, 9, 0, 0), '
+  cosigneeInfo
+  ': {'
+  address
+  ': {'
+  description
+  ': '
+  ', '
+  coordinates
+  ': '
+  ', '
+  city
+  ': '
+  ', '
+  state
+  ': '
+  ', '
+  country
+  ': '
+  ', '
+  county
+  ': '
+  ', '
+  streetNumber
+  ': '
+  ', '
+  streetName
+  ': '
+  ', '
+  postalCode
+  ': '
+  '}, '
+  fullName
+  ': '
+  ', '
+  hideReceiverInfo
+  ': None, '
+  freightCharges
+  ': None}, '
+  dropoffLocation
+  ': '
+  Jacksonville,
+  FL,
+  USA
+  ', '
+  dropoffStartTime
+  ': None, '
+  dropoffCoordinates
+  ': {'
+  lat
+  ': 30.3321838, '
+  lng
+  ': -81.65565099999999}, '
+  receiverInfo
+  ': {'
+  fullName
+  ': '
+  ', '
+  address
+  ': [{'
+  description
+  ': '
+  ', '
+  coordinates
+  ': '
+  ', '
+  city
+  ': '
+  ', '
+  state
+  ': '
+  ', '
+  country
+  ': '
+  ', '
+  county
+  ': '
+  ', '
+  streetNumber
+  ': '
+  ', '
+  streetName
+  ': '
+  ', '
+  postalCode
+  ': '
+  '}]}, '
+  dropoffAddress
+  ': {'
+  city
+  ': '
+  Jacksonville
+  ', '
+  county
+  ': '
+  Duval
+  County
+  ', '
+  state
+  ': '
+  Florida
+  ', '
+  country
+  ': '
+  United
+  States
+  ', '
+  streetNumber
+  ': '
+  ', '
+  streetName
+  ': '
+  ', '
+  postalCode
+  ': '
+  '}}], '
+  pickupLocation
+  ': '
+  Toronto,
+  ON,
+  Canada
+  ', '
+  hideAddressInfo
+  ': None, '
+  pickupCoordinates
+  ': {'
+  lat
+  ': 43.653226, '
+  lng
+  ': -79.3831843}, '
+  pickupStartDate
+  ': datetime.datetime(2020, 9, 7, 0, 0), '
+  pickupEndDate
+  ': '
+  ', '
+  pickupAddress
+  ': {'
+  city
+  ': '
+  Toronto
+  ', '
+  county
+  ': '
+  Toronto
+  Division
+  ', '
+  state
+  ': '
+  Ontario
+  ', '
+  country
+  ': '
+  Canada
+  ', '
+  streetNumber
+  ': '
+  ', '
+  streetName
+  ': '
+  ', '
+  postalCode
+  ': '
+  '}}, '
+  loads
+  ': [{'
+  loadContentDetails
+  ': {'
+  weight
+  ': {'
+  unit
+  ': '
+  lb(s)
+  ', '
+  amount
+  ': 35000}, '
+  equipmentTypes
+  ': {'
+  specialized
+  ': {'
+  animalCarrier
+  ': False, '
+  movingVan
+  ': False, '
+  heavyHaulers
+  ': False, '
+  boatHauler
+  ': False}, '
+  container
+  ': False, '
+  tanker
+  ': False, '
+  auto
+  ': False, '
+  reefer
+  ': False, '
+  flatbed
+  ': {'
+  stepDeck
+  ': False, '
+  maxi
+  ': False, '
+  doubleDrop
+  ': False, '
+  lowboy
+  ': False, '
+  removableGooseneck
+  ': False, '
+  flatbed
+  ': False, '
+  landoll
+  ': False}, '
+  powerOnly
+  ': False, '
+  van
+  ': True, '
+  hopperBottom
+  ': False, '
+  dumpTruck
+  ': False}, '
+  additional
+  ': {'
+  cashOnDelivery
+  ': None, '
+  teamRequired
+  ': None, '
+  mode
+  ': {'
+  prepaid
+  ': None, '
+  collect
+  ': None}, '
+  customerCheck
+  ': None}, '
+  handlingUnits
+  ': {'
+  type
+  ': None, '
+  amount
+  ': None}, '
+  ftl
+  ': True, '
+  ltl
+  ': {'
+  nfmcClass
+  ': None}, '
+  equipmentSpecifications
+  ': {'
+  hazMat
+  ': False, '
+  palletExchange
+  ': False, '
+  liftGate
+  ': False, '
+  curtains
+  ': False, '
+  airRide
+  ': False, '
+  insulated
+  ': False, '
+  tempControlled
+  ': False, '
+  openTop
+  ': False, '
+  eTrack
+  ': False, '
+  walkingFloor
+  ': False, '
+  hotShot
+  ': False, '
+  conestoga
+  ': False, '
+  extendable
+  ': False, '
+  blanketWrap
+  ': False, '
+  sideKit
+  ': False, '
+  bTrain
+  ': False, '
+  chassis
+  ': False, '
+  chains
+  ': False, '
+  loadRamps
+  ': False, '
+  loadOut
+  ': False, '
+  intermodal
+  ': False, '
+  vented
+  ': False, '
+  tarps
+  ': False}, '
+  package
+  ': {'
+  type
+  ': None, '
+  quantity
+  ': None}, '
+  commodityDescription
+  ': {'
+  hazardousMaterialsCheck
+  ': None, '
+  description
+  ': '
+  ', '
+  specialCareInstructions
+  ': '
+  No
+  Reefers
+  '}, '
+  dimensions
+  ': {'
+  length
+  ': {'
+  unit
+  ': '
+  inch
+  ', '
+  amount
+  ': 0}, '
+  height
+  ': {'
+  unit
+  ': '
+  inch
+  ', '
+  amount
+  ': 0}, '
+  width
+  ': {'
+  unit
+  ': '
+  inch
+  ', '
+  amount
+  ': 0}}}}], '
+  brokerName
+  ': ['
+  FO
+  Test
+  Broker
+  N
+  '], '
+  loadName
+  ': None}, '
+  locationProcessingRetry
+  ': 0, '
+  locationProcessed
+  ': False, '
+  postedBy
+  ': {'
+  companyName
+  ': '
+  FleetOps
+  ', '
+  displayName
+  ': '
+  FO
+  Test
+  Broker
+  N
+  ', '
+  email
+  ': '
+  test
+  +
+  user1@fleetops.ai
+  ', '
+  phone
+  ': '
+  +
+  14541231212
+  ', '
+  companyLogo
+  ': '
+  https
+  ://fleetops-user-documents.s3.amazonaws.com/5b3d2686bdafc7000a609290/profile/companyLogo.png'}, 'interactions': []}, 'ral_id': '5f4421ee5326fc75db13ff15', 'metadata': {}}, {'matchId': ObjectId('5f560a475eb58d0001b3acb1'), 'loadId': ObjectId('5f4fece32da4df0115c4fec2'), 'status': 'RAL', 'notifications': {}, 'timestamp': 1599474243, 'cost': 0, 'personId': '44681', 'interactions': [], 'autoMatchId': None, 'uploadedFiles': {}, 'active': True, 'accepted': False, 'liked': False, 'sentBy': '', 'load': {'loadId': ObjectId('5f4fece32da4df0115c4fec2'), 'shortId': 'fo-m2q3', 'status': 'PC', 'trackingNumber': '', 'account': SON([('distance', 529), ('stops', 1), ('loadCount', 1), ('fullLoad', True)]), 'brokerId': 'wswDSzqXSqMmuaXwTJnBYAjHuTm1', 'token': '', 'source': 'FleetOps', 'key': '', 'payload': {'loadPay': {'amount': 2100.0, 'perMileRate': 3.97, 'currency': 'CAD', 'priceIsEstimated': False, 'range': {'high': None, 'originalHigh': None, 'low': None, 'originalLow': None}, 'emailUpdates': None, 'originalAmount': None}, 'daysUntilPayment': None, 'customerName': None, 'assignedDate': datetime.datetime(2020, 9, 2, 19, 5, 6, 667000), 'loadStatus': 'PC', 'tripDetails': {'pickupStartTime': '', 'pickupEndTime': '', 'dropoffs': [{'dropoffEndDate': '', 'dropoffEndTime': '', 'dropoffStartDate': datetime.datetime(2020, 9, 9, 0, 0), 'cosigneeInfo': {'address': {'description': '', 'coordinates': '', 'city': '', 'state': '', 'country': '', 'county': '', 'streetNumber': '', 'streetName': '', 'postalCode': ''}, 'fullName': '', 'hideReceiverInfo': None, 'freightCharges': None}, 'dropoffLocation': 'New Castle, DE, USA', 'dropoffStartTime': '', 'dropoffCoordinates': {'lat': 39.6620397, 'lng': -75.5668166}, 'receiverInfo': {'fullName': '', 'address': [{'description': '', 'coordinates': '', 'city': '', 'state': '', 'country': '', 'county': '', 'streetNumber': '', 'streetName': '', 'postalCode': ''}]}, 'dropoffAddress': {'city': 'New Castle', 'county': 'New Castle County', 'state': 'Delaware', 'country': 'United States', 'streetNumber': '', 'streetName': '', 'postalCode': '19720'}}], 'pickupLocation': 'Oshawa, ON, Canada', 'hideAddressInfo': None, 'pickupCoordinates': {'lat': 43.8970929, 'lng': -78.86579119999999}, 'pickupStartDate': datetime.datetime(2020, 9, 7, 0, 0), 'pickupEndDate': '', 'pickupAddress': {'city': 'Oshawa', 'county': 'Regional Municipality of Durham', 'state': 'Ontario', 'country': 'Canada', 'streetNumber': '', 'streetName': '', 'postalCode': ''}}, 'loads': [{'loadContentDetails': {'weight': {'unit': 'lb(s)', 'amount': 39000}, 'equipmentTypes': {'specialized': {'animalCarrier': False, 'movingVan': False, 'heavyHaulers': False, 'boatHauler': False}, 'container': False, 'tanker': False, 'auto': False, 'reefer': False, 'flatbed': {'stepDeck': False, 'maxi': False, 'doubleDrop': False, 'lowboy': False, 'removableGooseneck': False, 'flatbed': False, 'landoll': False}, 'powerOnly': False, 'van': True, 'hopperBottom': False, 'dumpTruck': False}, 'additional': {'cashOnDelivery': None, 'teamRequired': None, 'mode': {'prepaid': None, 'collect': None}, 'customerCheck': None}, 'handlingUnits': {'type': None, 'amount': None}, 'ftl': True, 'ltl': {'nfmcClass': None}, 'equipmentSpecifications': {'hazMat': False, 'palletExchange': False, 'liftGate': False, 'curtains': False, 'airRide': False, 'insulated': False, 'tempControlled': False, 'openTop': False, 'eTrack': False, 'walkingFloor': False, 'hotShot': False, 'conestoga': False, 'extendable': False, 'blanketWrap': False, 'sideKit': False, 'bTrain': False, 'chassis': False, 'chains': False, 'loadRamps': False, 'loadOut': False, 'intermodal': False, 'vented': False, 'tarps': False}, 'package': {'type': None, 'quantity': None}, 'commodityDescription': {'hazardousMaterialsCheck': None, 'description': '', 'specialCareInstructions': ''}, 'dimensions': {'length': {'unit': 'inch', 'amount': 0}, 'height': {'unit': 'inch', 'amount': 0}, 'width': {'unit': 'inch', 'amount': 0}}}}], 'brokerName': ['FO Test Broker N'], 'loadName': None}, 'locationProcessingRetry': 0, 'locationProcessed': False, 'postedBy': {'companyName': 'FleetOps', 'displayName': 'FO Test Broker N', 'email': 'test+user1@fleetops.ai', 'phone': '+14541231212', 'companyLogo': 'https://fleetops-user-documents.s3.amazonaws.com/5b3d2686bdafc7000a609290/profile/companyLogo.png'}, 'interactions': []}, 'ral_id': '5f4421ee5326fc75db13ff15', 'metadata': {}}]

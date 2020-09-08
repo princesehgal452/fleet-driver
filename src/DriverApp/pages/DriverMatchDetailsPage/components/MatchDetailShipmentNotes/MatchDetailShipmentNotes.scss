@@ -1,0 +1,20 @@
+@import "../../../../../assets/stylesheets/utils/v2_variables";
+
+.match-detail-page-shipment-notes {
+  .title-section {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    background-color: $white;
+    padding-left: 20px;
+    align-items: center;
+    height: 40px;
+  }
+  .body-section {
+    background-color: $white;
+    box-shadow: -2px 5px 20px 0 rgba(97, 97, 97, 0.12);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

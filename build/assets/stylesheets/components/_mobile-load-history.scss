@@ -1,0 +1,230 @@
+.load-history {
+  max-width: none;
+
+  .container-fluid {
+    max-width: 737px;
+  }
+
+  * {
+    font-weight: 500;
+  }
+  p {
+    font-weight: 500;
+  }
+  strong {
+    font-weight: 700;
+  }
+
+  .form-group {
+    position: relative;
+  }
+
+  .payment-details-nav {
+    height: 38px;
+    background-color: rgba(57, 61, 68, 0.8);
+    position: relative;
+    z-index: 10;
+    box-shadow:  0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+    top: 9px;
+    .flex-content {
+      span {
+        margin-left: 10px;
+      }
+    }
+
+    
+  }
+
+  .form-group {
+    img {
+      @include prefixed(transform, translateY(-50%));
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+    }
+    .form-control {
+      position: relative;
+      &.search {
+        padding-left: 36px;
+        font-size: 18px;
+        line-height: 25px;
+        background-color: rgba(203, 202, 202, 0.5);
+        height: 44px;
+        &:hover, &:focus {
+          border-color: rgba(203, 202, 202, 0.5);
+        }
+      }
+    }
+  }
+
+  .box-collapse {
+    .collapse-header {
+        @include display-flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $themeText;
+        &:hover, &:visited, &:focus {
+          color: $titleColor;
+        }
+        .collapse-title {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 24px;
+          color: $themeText;
+          img {
+            width: 9px;
+            margin-top: -3px;
+            margin-right: 10px;
+            @include prefixed(transition, all linear 0.25s);
+            @include prefixed(transform, rotate(90deg));
+          }
+          a {
+            margin-right: 5px;
+          }
+        }
+      .status {
+        font-size: 14px;
+        font-weight: 500;
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+    &.collapsed {
+      .collapse-header {
+        .collapse-title {
+          img {
+            @include prefixed(transform, rotate(0deg));
+          }
+        }
+      }
+    }
+  }
+
+  .collapse-content {
+    padding: 15px 20px 0px;
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      strong {
+        font-weight: 700;
+      }
+    }
+    .flex-box {
+      .flex-content {
+        strong {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .upload-document{
+    font-size: 14px;
+  }
+
+  .load-bill {
+    .download {
+      display: block;
+      margin-top: 15px;
+      text-transform: uppercase;
+      line-height: 25px;
+      img {
+        width: 12px;
+        margin-right: 10px;
+      }
+    }
+    .btn {
+      margin-top: 15px;
+      font-size: 16px;
+      text-transform: uppercase;
+      padding: 6px 20px;
+    }
+  }
+
+  .load-completed {
+    .box {
+      position: relative;
+      opacity: 0.75;
+      &:after {
+        background-color: #fff;
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        right: 4px;
+        bottom: 4px;
+        z-index: -10;
+      }
+      .box-collapse , .collapse-content , .load-bill {
+        opacity: 0.5;
+        position: relative;
+        z-index: 10;
+      }
+      .box-collapse {
+        display: block;
+      }
+      .collapse-content {
+        p {
+          .active-text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .status {
+    .signed-invoice,
+    .bill-of-lading,
+    .load-tender {
+      float: left;
+      i {
+        font-size: 16px;
+      }
+      span {
+        display: inline;
+      }
+    }
+  }
+
+  .load-pay-amount {
+    float: right;
+    margin-right: 10px;
+  }
+}
+
+.no-loads {
+  text-align: center;
+}
+
+.bill-of-lading-status {
+  margin-right: 5px;
+  line-height: 16px;
+  border-radius: 17px;
+  padding: 4px 5px;
+  margin-bottom: 5px;
+  font-weight: 800;
+
+  &.approved {
+    background-color: #41c081;
+  }
+  &.disputed {
+    background-color: red;
+  }
+  &.pending {
+    background-color: orange;
+  }
+
+  &.na {
+    background-color: black;
+  }
+}

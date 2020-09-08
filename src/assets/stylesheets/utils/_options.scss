@@ -1,0 +1,57 @@
+///////////////////////////////////////////////////////////////////// Variables
+//-----------------------------------------------------------------------------
+// Browser Prefixes - Which CSS prefixes should be used?
+$webkit: true !default;
+$moz: false !default;
+$ms: false !default;
+$o: false !default;
+
+// Colors
+// Background
+$bgWhite: #fff !default;
+$bgGray: #eee !default;
+$modalBackgroundColor: rgba(233, 233, 233, 0.8);
+
+// Text
+$themeText: #231f20 !default;
+$titleColor: #2a2c2e !default;
+$helpText: #647680 !default;
+$activeText: #41c081 !default;
+$dangerText: #ff7163 !default;
+$silverText: #cdd4d3 !default;
+$linkText: #3697d7 !default;
+$darkOrange: #FF8500;
+$safetyOrange: #FC7008;
+
+// Border color
+$bordercolor : #cacaca;
+$borderFocusColor: #3697d7;
+
+// Color
+$white: #ffffff;
+
+// Icon color
+$violet: #8275e2;
+$blue: #4098d5;
+$backgroundColor: antiquewhite !default;
+$secondaryColor: #666 !default;
+$highlightColor: #ccc !default;
+$activeColor: #2098D1 !default;
+$shadowColor: rgba(0, 0, 0, .6) !default;
+
+// Shadows
+$boxShadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) !default;
+
+// Padding
+$defaultPadding: 15px;
+
+// Media queries Mixin
+$mobile : 640px;
+$tablet : 768px;
+$desktopSm : 991px;
+$desktopMd: 1024px;
+$desktopLg: 1200px;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,100,200,300,500,600,700,800);

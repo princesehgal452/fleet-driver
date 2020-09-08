@@ -1,0 +1,544 @@
+.driver-accept {
+  max-width: 767px;
+
+  .title {
+    font-size: 1.4em;
+  }
+
+  .icon-clock {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  .icon-location{
+    width: 12px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  .page-heading {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #3697d7;
+    padding: 20px 15px 0px 15px;
+  }
+
+  // LoadOld pay
+  .load-pay {
+    @include display-flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    .box-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #2a2c2e;
+    }
+    .active-text {
+      font-size: 26px;
+      float: right;
+    }
+
+    .load_pay_driver {
+      color: #48bf83;
+      font-size: 1.4em;
+    }
+
+    .load-negotiate-box {
+      @include display-flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .negotiate-button-option {
+        width: 100%;
+        margin: 5px;
+        line-height: 1.5;
+        font-size: 1.2em;
+        white-space: normal;
+      }
+    }
+
+    .driver-negotiate-initial-text {
+      font-weight: 600;
+      margin: 10px 0px;
+      font-size: 1.4em;
+      text-align: center;
+    }
+
+    .load-pay-amount {
+      margin-bottom: 10px;
+    }
+
+    .load-pay-submit-box {
+      width: 100%;
+
+      .load-pay-submit {
+        width: 100%;
+        font-size: 1.2em;
+      }
+    }
+
+    .negotiate-button {
+      font-size: 1.4em;
+      width: 100%;
+    }
+
+    .per-mile-rate {
+      font-size: 1.3em;
+      width: 100%;
+      border-top: solid 1px #cdd4d3;
+      padding-top: 10px;
+
+      .per-mile-rate-text {
+        color: #3697d7;
+        font-size: 1em;
+        font-weight: 600;
+        float: right;
+      }
+    }
+
+    .driver-negotiate-form-container {
+      @include display-flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+
+      .driver-negotiate-form {
+        @include display-flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0px 20px 0px;
+
+        .price-input.form-group.form-group-icon-right {
+          margin: 0px;
+        }
+      }
+
+      .driver-negotiate-text {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        text-align: center;
+      }
+
+      label {
+        display: none;
+      }
+    }
+
+
+    .img-text-color {
+      color: #ced1d6;
+    }
+
+    .links-container {
+      .link-btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0px;
+        border: 1px solid #8C8989;
+        color: #8C8989;
+        font-size: 1.3em;
+      }
+
+      .doc-links {
+        border: solid 1px #48bf83;
+        color: #48bf83;
+      }
+    }
+  }
+
+  // Trip details
+  .trip-details {
+    * {
+      font-weight: normal;
+    }
+    strong, b {
+      font-weight: 600;
+    }
+    .help-text-lg , .help-text-sm {
+      color: $helpText;
+      margin-bottom: 15px;
+    }
+    .help-text-lg {
+      font-weight: 300;
+      font-size: 1.1em;
+    }
+    .help-text-sm {
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .trip-content {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
+    .row {
+      .col-12 {
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &.pickup-drop {
+      .help-text-sm {
+        opacity: 0.8;
+      }
+      p {
+        line-height: 22px;
+        font-size: 1.2em;
+      }
+      .map {
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .pickup {
+        padding-bottom: 15px;
+        border-bottom: 1px solid $bordercolor;
+      }
+      .drop {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  .load-pay-message-box {
+    font-weight: 500;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    box-shadow: $boxShadow;
+
+    .load-pay-message-success {
+      background-color: #48bf83;
+      padding: 15px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+
+      .load-pay-success-message-box {
+        @include display-flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+    }
+
+
+  }
+
+  .load-pay-message-failure {
+    @include display-flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 15px;
+  }
+
+  .load-pay-message-permile {
+    background-color: #8ED7C5;
+    color: #000;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0px 20px;
+  }
+
+
+
+  // LoadOld Contents
+  .load-content {
+    .handling-unit,
+    .dimensions,
+    .equipment-spec,
+    .equipment-type {
+      border-bottom: 1px solid $bordercolor;
+    }
+    .optional {
+      border-top: 1px solid $bordercolor;
+    }
+    .equipment-spec,
+    .equipment-type {
+      color: #647680;
+      font-size: 1.2em;
+      font-weight: 400;
+      opacity: .8;
+      text-transform: capitalize;
+      .help-text {
+        padding: 8px;
+      }
+    }
+    .equipment-spec-list,
+    .equipment-type-list {
+      color: #000000;
+    }
+    .description,
+    .optional {
+      padding-top: 15px;
+      >.help-text {
+        .danger-text {
+          font-size: 1.2em;
+        }
+      }
+      .description-1 {
+        margin: 10px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 1.2em;
+        margin: 10px;
+      }
+      .help-text {
+        color: $helpText;
+        font-weight: 400;
+        font-size: 1.2em;
+        margin: 10px;
+        opacity: 0.8;
+        text-transform: capitalize;
+        &.care {
+          margin-bottom: 0px;
+          font-size: 1.1em;
+          color: $silverText;
+        }
+        .danger-text {
+          font-weight: 400;
+          float: right;
+        }
+      }
+      .deg {
+        font-size: 6px;
+        vertical-align: top;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  // Footer Button
+  .footer-button {
+    .btn-danger, .btn-primary {
+      font-size: 1.2em;
+    }
+  }
+  i {
+    color: $helpText;
+  }
+  i.fa {
+    margin-right: 8px;
+    &.violet {
+      color: $violet;
+    }
+    &.blue {
+      color: $blue;
+    }
+  }
+
+  // Table
+  .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border: none;
+  }
+  .table {
+    > thead {
+      > tr {
+        > th {
+          color: $helpText;
+          font-size: 1.3em;
+          font-weight: 400;
+          opacity: 0.8;
+          text-transform: capitalize;
+          padding: 8px;
+        }
+      }
+    }
+    >tbody{
+      >tr {
+        >th {
+          color: $silverText;
+          font-size: 1.1em;
+          font-weight: 400;
+          text-transform: capitalize;
+          padding: 8px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          font-size: 1.2em;
+          color: #000000 !important;
+          font-weight: 400;
+          padding: 8px;
+        }
+      }
+    }
+  }
+
+  // Driver details
+  .driver-details {
+    @include display-flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      color: #647680;
+    }
+  }
+
+     // Modal
+    .modal {
+      background-color: $modalBackgroundColor;
+      .modal-dialog {
+        .modal-content {
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) !important;
+          border: none;
+
+          .modal-header, .modal-footer {
+            border: none;
+          }
+
+          .modal-header {
+            padding:15px 35px;
+            position: relative;
+            .modal-title {
+              line-height: 18px;
+              .back-content {
+                text-decoration: none;
+                cursor: pointer;
+                position: relative;
+                .back-arrow {
+                  width: 20px;
+                  height: 18px;
+                  position: absolute;
+                  cursor: pointer;
+                  left: -20px;;
+                  .back {
+                    width: 8px;
+                  }
+                }
+              }
+              span {
+                text-transform: uppercase;
+                color: $linkText;
+                font-size: 14px;
+                font-weight: 600;
+                vertical-align: middle;
+              }
+            }
+            .close {
+              width: 18px;
+              height: 18px;
+              line-height: 18px;
+              outline: none;
+              margin-top: 0px;
+              opacity: 1 !important;
+              position: absolute;
+              right: 15px;
+              img {
+                width: 100%;
+                vertical-align: top;
+              }
+            }
+          }
+
+          .modal-body {
+            padding-left: 35px;
+            padding-right: 35px;
+            h1 {
+              font-size: 20px;
+              font-weight: 600;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    #rejection.modal {
+      .modal-body {
+        .radio {
+          padding-left: 0px;
+          margin-bottom: 15px;
+          &:first-child {
+              margin-top: 15px;
+          }
+          label {
+            vertical-align: middle;
+            font-size: 16px;
+            margin-bottom: 5px;
+              input[type="radio"] {
+              width:20px;
+              height: 20px;
+              margin-right: 20px;
+              margin-top: 2px;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+    }
+
+    #acceptance.modal {
+      p {
+        font-weight: normal;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a {
+          text-transform: uppercase;
+          font-size: 18px !important;
+          .download {
+            width: 18px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    #rejection.modal, #acceptance.modal {
+      .modal-footer{
+        padding-bottom: 20px;
+        .btn {
+          font-size: 18px;
+          text-transform: uppercase;
+          padding: 6px 20px;
+        }
+      }
+    }
+  }
+
+
+// Modal
+.modal-backdrop {
+  background-color: rgba(244, 243, 243, 0.95);
+}
+.modal-backdrop.in {
+  opacity: 1 !important;
+}
+
+.signed-invoice,
+.bill-of-lading,
+.load-tender {
+  float: right;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 10px;
+  line-height: 16px;
+  i {
+    color: #fc7166;
+    font-size: 25px;
+  }
+  span {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

@@ -1,0 +1,32 @@
+image: betomorrow/ci-node-awscli:latest
+
+definitions:
+  steps:
+    - step: &build-test
+        name: Build and test
+        caches:
+          - node
+        script:
+          - npm ci
+          - npm test
+        artifacts:
+          - node_modules/**
+
+pipelines:
+  default:
+    - step: *build-test
+  branches:
+    staging:
+      - step: *build-test
+      - step:
+          name: Deploy to staging
+          deployment: staging
+          script:
+            - npm run deploy-staging
+    production:
+      - step: *build-test
+      - step:
+          name: Deploy to production
+          deployment: production
+          script:
+            - npm run deploy-prod

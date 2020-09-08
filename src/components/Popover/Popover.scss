@@ -1,0 +1,89 @@
+@import "../../assets/stylesheets/utils/all";
+@import "../../assets/stylesheets/migration/variables";
+
+.fleetops-popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 11, 2, 0.85);
+  z-index: 1300;
+
+  .popover-content {
+    width: 100%;
+    @include media(minDesktopSm) {
+      width: initial;
+    }
+
+    > div {
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+      @include media(minDesktopSm) {
+        width: initial;
+      }
+
+      > div {
+        width: 100%;
+      }
+    }
+
+    &--white {
+      > div {
+        background-color: #FFFFFF;
+        color: inherit
+      }
+    }
+
+    &--right {
+      top: 0;
+      right: 0;
+      left: auto;
+      height: 100vh;
+      width: initial;
+
+      > div {
+        height: 100%;
+        width: initial;
+
+        > div {
+          height: 100%;
+          width: initial;
+        }
+      }
+    }
+
+    &__container {
+      .header-section {
+        .popover-title {
+          padding: 20px 5px 5px;
+          font-size: 14px;
+          text-align: center;
+          @include media(minDesktopSm) {
+            padding: 10px;
+            font-size: 18px;
+          }
+        }
+
+        .popover-message {
+          cursor: pointer;
+          padding: 5px;
+          font-size: 12px;
+          text-align: center;
+          color: #797979;
+          @include media(minDesktopSm) {
+            padding: 10px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .content-section {
+        text-align: center;
+      }
+    }
+  }
+}

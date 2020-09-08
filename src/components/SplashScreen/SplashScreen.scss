@@ -1,0 +1,23 @@
+@keyframes zoomInZoomOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.splashScreen {
+  height: 100%;
+  width: 100%;
+  background-color: #31b958;
+  img {
+    width: 100%;
+    padding: 20px;
+    max-width: 300px;
+  }
+  animation: zoomInZoomOut 5s infinite;
+}

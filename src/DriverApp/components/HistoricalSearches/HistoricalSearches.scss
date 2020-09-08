@@ -1,0 +1,11 @@
+.infinite-loader {
+  width: 100%;
+  & > div {
+    width: 100%;
+  }
+}
+.historical-searches {
+  &__container {
+    padding: 10px 7.5px;
+  }
+}

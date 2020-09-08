@@ -1,0 +1,301 @@
+.form-group {
+  position: relative;
+
+  &:not(.checkbox-content) {
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: $borderFocusColor;
+      transition: 150ms;
+    }
+  }
+
+  &.field-focused {
+    &:after {
+      transition: 150ms;
+      @include transform(translateX(-50%));
+      width: 100%;
+    }
+  }
+
+  &.form-group-icon-right {
+    margin-bottom: 50px;
+  }
+
+  .form-control {
+    border-radius: 0px !important;
+    border-color: transparent transparent #ced1d6 transparent;
+    border-bottom-width: 2px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+
+  &[class*="form-group-icon-"] {
+    position: relative;
+    .form-control{
+      padding-bottom: 15px;
+      padding-right: 50px;
+    }
+    [class*="icon-"]{
+      height: 20px;
+      display: inline-block;
+    }
+    &[class*="right"]{
+      [class*="icon-"]{
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+
+
+input {
+  &::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+    color: #ced1d6;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+  &::-moz-placeholder{ /* Chrome/Opera/Safari */
+    color: #ced1d6;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+  &:-ms-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ced1d6;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+  &:-moz-placeholder { /* Chrome/Opera/Safari */
+    color: #ced1d6;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+}
+
+
+//  Checkbox
+.checkbox-content {
+  &.disabled {
+    opacity: 0.6;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+    &:hover {
+      cursor: pointer;
+    }
+    & ~ label {
+      cursor: pointer;
+      span{
+        &.checkbox {
+          @include prefixed(transition, all linear 0.25s);
+          width: 20px;
+          height:20px;
+          margin: -3px 8px 0px 0px;
+          padding: 0px;
+          border-radius: 4px;
+          border: 1px solid $linkText;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+        }
+
+      }
+    }
+    &:checked {
+      & ~ label {
+        span {
+          &.checkbox {
+            width: 20px;
+            height:20px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 1px solid $linkText;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            background-color: $linkText;
+            &:before, &:after {
+              @include prefixed(transform-origin, bottom);
+              content: '';
+              width: 2px;
+              background-color: $bgWhite;
+              position: absolute;
+              left: calc(50% - 3px);
+            }
+            &:before {
+              @include prefixed(transform, rotate(-45deg));
+              height: 6px;
+              top: calc(100% - 10px);
+            }
+            &:after {
+              @include prefixed(transform, rotate(30deg));
+              height: 14px;
+              top: calc(100% - 17px);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+//  Radio
+.checkbox-content {
+
+  // input#hazardousMaterials + label, input#freightCharges + label {
+  //   margin-left: 15px;
+  // }
+
+  input[type="radio"] {
+    display: none;
+    &:hover{
+      cursor: pointer;
+    }
+    & ~ label {
+      cursor: pointer;
+      span {
+        &.checkbox {
+          width: 20px;
+          height:20px;
+          margin: -3px 0 0 8px;
+          padding: 0px;
+          border-radius: 4px;
+          border: 2px solid $linkText;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+
+          @include prefixed(transition, all linear 0.25s);
+
+          &.orange-checkbox {
+            border-color: $darkOrange;
+          }
+        }
+      }
+    }
+    &:checked {
+      & ~ label {
+        span {
+          &.checkbox {
+            width: 20px;
+            height:20px;
+            padding: 0px;
+            border-radius: 4px;
+            border: 2px solid $linkText;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            background-color: white;
+            &:before{
+              content: '';
+              width: 2px;
+              height: 6px;
+              background-color: $linkText;
+              position: absolute;
+              left: calc(50% - 3px);
+              top: calc(100% - 10px);
+              @include prefixed(transform, rotate(-45deg));
+              @include prefixed(transform-origin,      bottom);
+            }
+            &:after {
+              content: '';
+              width: 2px;
+              height: 12px;
+              background-color: $linkText;
+              position: absolute;
+              left: calc(50% - 3px);
+              top: calc(100% - 17px);
+              @include prefixed(transform, rotate(45deg));
+              @include prefixed(transform-origin, bottom);
+            }
+
+            &.orange-checkbox {
+              border-color: $darkOrange;
+              &:before, &:after {
+                background-color: $darkOrange;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.error,
+.geo-suggest-error,
+.date-picker-error,
+.time-picker-error {
+  position: absolute;
+  color: red;
+  top: 50px;
+  opacity: 0.65;
+}
+
+.geo-suggest-error,
+.date-picker-error,
+.time-picker-error {
+  display: none;
+}
+
+.checkboxCollapse {
+  padding: 0 5px !important;
+  position: relative;
+  top: -3px;
+  left: 10px;
+}
+
+.form-control[readonly] {
+  background-color: #fff;
+  cursor: text;
+}
+
+.react-datepicker-popper {
+  // top: -32px !important;
+  .react-datepicker {
+    border: 1px solid #ccc !important;
+    box-shadow: 0 1px 5px #ccc !important;
+  }
+  .react-datepicker__header {
+    background: #edfaff !important;
+    border-bottom: 1px solid #ccc !important;
+  }
+  .react-datepicker__day--selected {
+    color: #2db7f5 !important;
+    background: #edfaff !important;
+  }
+  .react-datepicker__day--keyboard-selected {
+    color: #2db7f5 !important;
+    background: #edfaff !important;
+  }
+  .react-datepicker__day:hover {
+    background-color: #edfaff !important;
+  }
+  .react-datepicker__triangle {
+    border-bottom-color: #edfaff !important;
+  }
+}
+
+#findDriver.active {
+  background-color: #3697d7 !important;
+  border-color: #3697d7 !important;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: transparent !important;
+  background-image: none !important;
+}

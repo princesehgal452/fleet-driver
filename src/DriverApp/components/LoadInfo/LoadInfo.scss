@@ -1,0 +1,12 @@
+@import "../../../assets/stylesheets/utils/v2_variables";
+
+.load-info {
+  &__container {
+    padding: 10px 7.5px;
+  }
+  &__amount{
+    h1 {
+      color: $mantis;
+    }
+  }
+}

@@ -78,7 +78,7 @@ export interface IOption extends ILabelAndValue<boolean> {
 
 const loadSortOptions: IOption[] = [
   { label: 'Highest Price', value: false, fieldName: 'rate' },
-  { label: 'Hazmat', value: false, fieldName: 'hazmat' },
+//   { label: 'Hazmat', value: false, fieldName: 'hazmat' },
   { label: 'Nearest Pickup', value: false, fieldName: 'pickUpDate' },
   { label: 'Tracking', value: false, fieldName: 'tracking' },
   { label: 'Recent Posting', value: false, fieldName: 'newest' },
@@ -257,7 +257,7 @@ class SearchLoadsContentFormContainer extends React.Component<ISearchLoadsConten
   get stepText() {
     const { currentStep, showRALSubmitConfirmation } = this.state;
     const { driverAppStore, drawerClosed, isRALSearch } = this.props;
-    const { searchStoreV3: { searchResults: { pagination: { totalItems }, results, loading } }} = driverAppStore as DriverAppStore;
+    const { searchStoreV3: { searchResults: { pagination: { totalItems }, results, loading } } } = driverAppStore as DriverAppStore;
 
     if (drawerClosed) {
       if (isRALSearch) {
@@ -273,6 +273,7 @@ class SearchLoadsContentFormContainer extends React.Component<ISearchLoadsConten
     if (currentStep === SearchSteps.pickupDate) {
       return 'Select Date';
     }
+
     if (currentStep === SearchSteps.results && !showRALSubmitConfirmation) {
       if (results.length > 0) {
         return `We found ${totalItems} ${totalItems === 1 ? 'load' : 'loads'}!`;
@@ -544,7 +545,7 @@ class SearchLoadsContentFormContainer extends React.Component<ISearchLoadsConten
       perMileRate,
       radius,
     } = this.props;
-    const { truckStore: { postMyTruck }, searchStoreV3: { searchResults: { previousQuery, results } } } = driverAppStore as DriverAppStore;
+    const { truckStore: { postMyTruck } } = driverAppStore as DriverAppStore;
 
     let submitValues = {
       availableDate: new Date(),
@@ -579,10 +580,7 @@ class SearchLoadsContentFormContainer extends React.Component<ISearchLoadsConten
     if (radius) {
       submitValues = { ...submitValues, radius: refactorRadius(radius) };
     }
-    submitValues = { ...submitValues, count: results.length };
-
     try {
-      console.log('submitvalues-----',submitValues)
       await postMyTruck(submitValues);
       if (isRALSearch) {
         this.setState({ showRALSubmitConfirmation: true }, () => {
@@ -611,7 +609,6 @@ class SearchLoadsContentFormContainer extends React.Component<ISearchLoadsConten
     }
   };
 
-
   render() {
     const { currentStep, selectedOperatingLane, filtersOpen, showCurrentDatePrompt, showRALSubmitConfirmation, extendedFabFilter } = this.state;
     const {
@@ -634,7 +631,7 @@ class SearchLoadsContentFormContainer extends React.Component<ISearchLoadsConten
       prefillSearchQuery,
     } = this.props;
 
-    const { searchStoreV3, truckStore: { loading: ralSubmitLoading }, snackbarStore: { enqueueSnackbarStore } } = driverAppStore as DriverAppStore;
+    const { searchStoreV3, truckStore: { loading: ralSubmitLoading } } = driverAppStore as DriverAppStore;
     const {
       recentSearches,
       recentPickupLocations,
@@ -643,7 +640,6 @@ class SearchLoadsContentFormContainer extends React.Component<ISearchLoadsConten
         loading: isLoadingMatches,
       },
     } = searchStoreV3;
-
 
     const ReturnToRAL = () => (
       <div onClick={this.goBackToRAL} className={classes.backButton}>
@@ -724,7 +720,6 @@ class SearchLoadsContentFormContainer extends React.Component<ISearchLoadsConten
                       ralSubmitLoading={ralSubmitLoading}
                       reflectDrawerState={reflectDrawerState}
                       setCurrentStep={this.setCurrentStep}
-                      enqueueSnackbarStore={enqueueSnackbarStore}
                       programmaticFormSumitToRAL={this.programmaticFormSumitToRAL}
                       showRALSubmitConfirmation={showRALSubmitConfirmation}
                       isRALSearch={isRALSearch}

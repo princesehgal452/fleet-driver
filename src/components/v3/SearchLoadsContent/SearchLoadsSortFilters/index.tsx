@@ -471,9 +471,7 @@ const SearchLoadsSortFilters = memo(({
                 bodyContent={(
                   [(
                     <Grid container direction='column' spacing={1}>
-                      <Grid item>
-                        <LoadFilterPartners fieldName={partnersField.name} options={partnersField.options} />
-                      </Grid>
+
                       <Grid item>
                         <LoadFilterSorts
                           fieldName={loadSortsField.name}

@@ -80,7 +80,6 @@ class PostTruckPageContainer extends React.Component<IPostTruckPage, IPostTruckP
   }
 
   componentDidMount() {
-    console.log('comonent did mount0-----0-0')
     this.setDispatchableDriver();
     this.clearErrors();
     this.getMyTrucksHandler();
@@ -197,7 +196,6 @@ class PostTruckPageContainer extends React.Component<IPostTruckPage, IPostTruckP
     const { dispatchableDriver } = this.state;
     const { driverAppStore } = this.props;
     const { truckStore, snackbarStore: { enqueueSnackbarStore } } = driverAppStore as DriverAppStore;
-    console.log('truck poage---------')
     const normalizePostQuery = {
       ...postQuery,
       pickup: {
@@ -209,7 +207,6 @@ class PostTruckPageContainer extends React.Component<IPostTruckPage, IPostTruckP
         address: postQuery.dropoffLocation && postQuery.dropoffLocation.description,
       },
       personId: dispatchableDriver?.personId,
-      count: 5
     };
     ReactGA.event({
       category: GA_TRACKING.CATEGORIES.DRIVER,

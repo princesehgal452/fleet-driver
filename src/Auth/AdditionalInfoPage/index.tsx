@@ -267,7 +267,6 @@ class AdditionalInfoPage extends React.Component<IAdditionalInfoPageProps> {
     if (coordinates.lng && coordinates.lat) {
       const geocoder = new google.maps.Geocoder();
       geocoder.geocode({ location: coordinates }, (results) => {
-        console.log('results.length-------======',results.length)
         if (results && results.length) {
           try {
             postMyTruck({
@@ -284,7 +283,6 @@ class AdditionalInfoPage extends React.Component<IAdditionalInfoPageProps> {
               },
               equipmentTypeList: FOUser.equipmentTypeList,
               availableDate: new Date().toISOString(),
-              count: results.length,
               expiresOn: new Date(new Date().setDate(new Date().getDate() + 30)).toISOString(), // expires after 30 days
             }, false);
           } catch (error) {

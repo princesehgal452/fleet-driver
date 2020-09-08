@@ -7,7 +7,7 @@ import FOTextField from 'components/v3/FOTextField';
 
 
 const LoadFilterWeight = memo(({ fieldName }) => (
-  <FOFiltersAccordion title='TOTAL WEIGHT'>
+  <FOFiltersAccordion title='MAX WEIGHT'>
     <Field
       name={fieldName}
       component={FOTextField}

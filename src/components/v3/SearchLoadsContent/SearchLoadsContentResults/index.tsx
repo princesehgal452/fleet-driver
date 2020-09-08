@@ -16,7 +16,6 @@ interface ISearchLoadsContentResultsProps {
   programmaticFormSumitToRAL: () => void;
   hideRalSubmittedConfirmation: () => void;
   ralSubmitLoading: boolean;
-  enqueueSnackbarStore: () => void;
   setCurrentStep: (steps: SearchSteps) => void;
   showRALSubmitConfirmation?: boolean;
   isRALSearch?: boolean;
@@ -32,20 +31,9 @@ const SearchLoadsContentResults = observer(({
   ralSubmitLoading,
   showRALSubmitConfirmation,
   isRALSearch,
-  enqueueSnackbarStore,
 }: ISearchLoadsContentResultsProps) => {
   const resultsCount = useMemo(() => searchResults.results.length, [searchResults.results]);
-      if(!searchResults.loading && !isRALSearch){
-        if(searchResults.results.length == 0){
-            enqueueSnackbarStore('No results, try increasing your search radius.', { variant: 'success' });
-        }
-        else if(searchResults.results.length > 100){
-            enqueueSnackbarStore('Too many results, try filtering the loads.', { variant: 'success' });
-        }
-        else if(searchResults.results.length < 10){
-            enqueueSnackbarStore('Low results on search, try another lane.', { variant: 'success' });
-        }
-      }
+
   const NoResultsComponent = () => (
     <SearchLoadsContentNoResults
       resultsCount={resultsCount}
